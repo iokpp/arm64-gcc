@@ -1,0 +1,11 @@
+prefix=/home/bean/workspace1/crosstools/gcc-linaro-12.0.0-2021.11-x86_64_aarch64-linux-gnu
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libnl-nf
+Description: Netfilter Netlink Library
+Version: 3.6.0
+Requires: libnl-route-3.0
+Libs: -L${libdir} -lnl-nf-3
+Cflags: -I${includedir}/libnl3

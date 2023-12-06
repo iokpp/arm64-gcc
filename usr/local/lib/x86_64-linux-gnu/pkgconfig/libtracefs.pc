@@ -1,0 +1,11 @@
+prefix=./
+libdir=${prefix}/lib64
+includedir=${prefix}/include/tracefs
+
+Name: libtracefs
+URL: https://git.kernel.org/pub/scm/libs/libtrace/libtracefs.git/
+Description: Library for accessing ftrace file system
+Version: 1.6.1
+Requires: libtraceevent > 1.3
+Cflags: -I${includedir}
+Libs: -L${libdir} -ltracefs
